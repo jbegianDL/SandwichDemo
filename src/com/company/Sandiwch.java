@@ -6,6 +6,8 @@ public class Sandiwch {
     private String cheeseType;
     private boolean veggies;
 
+
+
     public void setBreadType(String choiceBread){
         breadType = choiceBread;
     }
@@ -36,6 +38,14 @@ public class Sandiwch {
 
     public boolean getVeggies(){
         return veggies;
+    }
+
+    public Sandiwch(){
+        breadType = "Rye";
+        proteinType = "Pastrami";
+        cheeseType = "Swiss";
+        veggies = false;
+
     }
 
     public void describeSandwich(){

@@ -1,6 +1,6 @@
 package com.company;
 
-public class Sandiwch {
+public class Sandwich {
     private String breadType;
     private String proteinType;
     private String cheeseType;
@@ -40,7 +40,7 @@ public class Sandiwch {
         return veggies;
     }
 
-    public Sandiwch(){
+    public Sandwich(){
         breadType = "Rye";
         proteinType = "Pastrami";
         cheeseType = "Swiss";
@@ -48,8 +48,23 @@ public class Sandiwch {
 
     }
 
+    public Sandwich(String bread, String meat, String cheese, boolean vegs){
+        breadType = bread;
+        proteinType = meat;
+        cheeseType = cheese;
+        veggies = vegs;
+
+    }
+
+    public Sandwich(String meat, String cheese, boolean vegs){
+        breadType = "Whole Grain";
+        proteinType = meat;
+        cheeseType = cheese;
+        veggies = vegs;
+    }
+
     public void describeSandwich(){
-        System.out.println(breadType + proteinType + cheeseType + veggies);
+        System.out.println("Bread: " + breadType + "\nProtein: " + proteinType + "\nCheese: " + cheeseType + "\nVeggies: " + veggies);
     }
 
 

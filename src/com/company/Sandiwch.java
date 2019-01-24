@@ -38,5 +38,9 @@ public class Sandiwch {
         return veggies;
     }
 
+    public void describeSandwich(){
+        System.out.println(breadType + proteinType + cheeseType + veggies);
+    }
+
 
 }

@@ -30,5 +30,13 @@ public class Sandiwch {
         return cheeseType;
     }
 
-    
+    public void setVeggies(boolean choiceVeggies){
+        veggies = choiceVeggies;
+    }
+
+    public boolean getVeggies(){
+        return veggies;
+    }
+
+
 }
